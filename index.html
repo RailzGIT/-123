@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Бронюйте квитки на подію року – незабутній концерт із зірками української сцени. Дата: 25 березня 2025 року, місце: концертна зала 'Україна', Київ.">
+    <title>Бронювання квитків</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Перейти до основного вмісту</a>
+
+    <header>
+        <h1>Подія року: Концерт у вашому місті!</h1>
+        <nav>
+            <ul>
+                <li><a href="#about-event">Про подію</a></li>
+                <li><a href="#tickets">Квитки</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="about-event">
+            <h2>Про подію</h2>
+            <p>Приєднуйтесь до незабутнього концерту із зірками української сцени. Це подія, яку не можна пропустити! Насолоджуйтесь живою музикою, неймовірною атмосферою та хорошим настроєм.</p>
+            <p><strong>Дата:</strong> 25 березня 2025 року</p>
+            <p><strong>Місце:</strong> Концертна зала "Україна", м. Київ</p>
+            <p>На сцені виступатимуть найпопулярніші українські артисти, серед яких:</p>
+            <ul>
+                <li>Океан Ельзи</li>
+                <li>Валентин Стрыкало</li>
+                <li>MONATIK</li>
+                <li>Джамала</li>
+            </ul>
+            <p>Вас чекає живе виконання улюблених хітів, світлове шоу та неймовірна атмосфера!</p>
+            <img src="https://i1.sndcdn.com/artworks-000011791322-791p93-t500x500.jpg" alt="Виступ артиста на сцені">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/%D0%92%D0%B0%D0%BB%D0%B5%D0%BD%D1%82%D0%B8%D0%BD_%D0%A1%D1%82%D1%80%D1%8B%D0%BA%D0%B0%D0%BB%D0%BE_%D0%B2_%D0%97%D0%B5%D0%BB%D1%91%D0%BD%D0%BE%D0%BC_%D1%82%D0%B5%D0%B0%D1%82%D1%80%D0%B5_3.jpg" alt="Глядачі на концерті">
+        </section>
+
+        <section id="tickets">
+            <h2>Квитки</h2>
+            <p>Виберіть тип квитка та заповніть форму бронювання:</p>
+            <form action="/submit-ticket" method="post">
+                <label for="ticket-type">Тип квитка:</label>
+                <select id="ticket-type" name="ticket-type" required>
+                    <option value="standard">Стандартний - 500 грн</option>
+                    <option value="vip">VIP - 1000 грн</option>
+                </select>
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+380123456789" required>
+                <button type="submit">Забронювати</button>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2>Контакти</h2>
+            <p>Зв'яжіться з нами, якщо маєте запитання:</p>
+            <address>
+                <p>Email: <a href="mailto:info@tickets.ua">info@tickets.ua</a></p>
+                <p>Телефон: <a href="tel:+380987654321">+380 98 765 4321</a></p>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Бронювання квитків. Усі права захищені.</p>
+    </footer>
+</body>
+</html>
